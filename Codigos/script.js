@@ -23,5 +23,15 @@ use("Ciencia");
 // console.log(db.Alunos.find({}));
 
 // quantos documentos(registro) tem a colecao
-console.log(db.Alunos.countDocuments({}));
-console.log(db.Alunos.count()); //deprecated
+// console.log(db.Alunos.countDocuments({}));
+// console.log(db.Alunos.count()); //deprecated
+
+// deletar documentos
+// console.log(db.Alunos.deleteOne({nome: "Katia"}));
+// console.log(db.Alunos.delete({nome: "Katia"}));
+
+// apagar a colecao
+// db.Alunos.drop()
+
+//excluir db
+db.Ciencias.drop()
