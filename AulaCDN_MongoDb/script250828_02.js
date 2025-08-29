@@ -55,3 +55,7 @@ use("Escola");
 // }));
 
 // console.log(db.Produtos.find({ "preco": { $lt: 151 } }));
+
+// console.log(db.Produtos.find({ "preco": { $ne: 150 } }));
+
+console.log(db.Produtos.find({ "preco": { $nin: [1900] } }));
