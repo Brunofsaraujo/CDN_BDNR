@@ -1,5 +1,5 @@
 // criar um banco de dados
-use("Ciencia");
+// use("Ciencia");
 
 // criar uma colecao
 //db.createCollection('Alunos');
@@ -34,4 +34,4 @@ use("Ciencia");
 // db.Alunos.drop()
 
 //excluir db
-db.Ciencias.drop()
+//db.Ciencias.drop()
