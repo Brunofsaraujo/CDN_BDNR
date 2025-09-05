@@ -28,7 +28,7 @@ use("Escola");
 //     { _id: 3, produto: "TV", preco: 150, operadora: tiposTv }
 // ])
 
-// console.log(db.Produtos.find({ "operadora.tipo01": "vivo" }, { "operadora.tip02": 0 , "operadora.tipo03": 0 }));
+// console.log(db.Produtos.find({ "operadora.tipo01": "vivo" }, { "operadora.tipo02": 0 , "operadora.tipo03": 0 }));
 
 //operadores e consulta
 
@@ -50,12 +50,14 @@ use("Escola");
 
 // console.log(db.Produtos.find({ "preco": { $gte: 150 } }, { _id: 1, produto: 1 }));
 
-// console.log(db.Produtos.find({ 
-//     "preco": { $in: [100, 150, 1900] } 
-// }));
+// console.log(db.Produtos.find({ "preco": { $in: [100, 150, 1900] } }));
 
 // console.log(db.Produtos.find({ "preco": { $lt: 151 } }));
 
 // console.log(db.Produtos.find({ "preco": { $ne: 150 } }));
 
-console.log(db.Produtos.find({ "preco": { $nin: [1900] } }));
+// console.log(db.Produtos.find({ "preco": { $nin: [1900] } }));
+
+console.log(db.Produtos.find({
+    "preco": { $nin: [150, 1000, 300] }
+}));
