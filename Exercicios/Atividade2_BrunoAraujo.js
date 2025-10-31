@@ -68,7 +68,7 @@ printjson(
 );
 
 // =============================================================================
-// Media de vendas por categoria (decrescente)
+// Media de preco por categoria (decrescente)
 // =============================================================================
 print("-- Media de vendas por categoria (ordem decrescente) --");
 printjson(
@@ -77,7 +77,7 @@ printjson(
 			{
 				$group: {
 					_id: "$categoria",
-					mediaVendasCategoria: { $avg: "$quantidade_vendida" },
+					mediaVendasCategoria: { $avg: "$preco" },
 				},
 			},
 			{ $sort: { mediaVendasCategoria: -1 } },
